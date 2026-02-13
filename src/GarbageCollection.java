@@ -1,11 +1,11 @@
-public class GarbageCollectionDemo {
+class GarbageCollection {
 
     protected void finalize() {
         System.out.println("Garbage Collected");
     }
 
     public static void main(String[] args) {
-        GarbageCollectionDemo obj = new GarbageCollectionDemo();
+        GarbageCollection obj = new GarbageCollection();
         obj = null;
         System.gc();
     }
